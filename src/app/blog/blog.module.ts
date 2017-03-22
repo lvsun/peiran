@@ -5,13 +5,15 @@ import { MdCardModule } from '@angular/material';
 
 import { BlogRoutingModule } from './blog-routing/blog-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PeiranCommonModule } from '../common/common.module';
 
 @NgModule({
   imports: [
     CommonModule,
     BlogRoutingModule,
     MdButtonModule,
-    MdCardModule
+    MdCardModule,
+    PeiranCommonModule
   ],
   declarations: [DashboardComponent]
 })
