@@ -5,14 +5,21 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { BlogModule } from './blog/blog.module';
+import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './not-found/not-found.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    BlogModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

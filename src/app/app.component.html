@@ -1,4 +1,10 @@
-<h1>
-  {{title}}
-  <p>我就是我，不一样的烟火</p>
-</h1>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <a href="#">沛然作雨</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776;</span>
+<router-outlet></router-outlet>

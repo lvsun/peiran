@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+
+  constructor() {}
+
+  openNav(): void {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  closeNav(): void {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
 }
