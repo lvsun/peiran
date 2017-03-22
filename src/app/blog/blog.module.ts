@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MdSidenavModule } from '@angular/material';
 import { MdButtonModule } from '@angular/material';
+import { MdCardModule } from '@angular/material';
 
 import { BlogRoutingModule } from './blog-routing/blog-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -11,7 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CommonModule,
     BlogRoutingModule,
     MdButtonModule,
-    MdSidenavModule
+    MdCardModule
   ],
   declarations: [DashboardComponent]
 })

@@ -14,3 +14,15 @@
 .example-sidenav {
   padding: 20px;
 }
+
+.example-card {
+  width: 500px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+md-card-content p {
+    color: rgba(0, 0, 0, .54)
+}
