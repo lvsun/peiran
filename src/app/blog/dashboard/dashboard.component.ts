@@ -12,4 +12,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  openNav():void {
+  	document.getElementById("mySidenav").style.width = "250px";
+  }
 }

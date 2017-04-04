@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideNavbarComponent {
 
-  constructor() {}
+	sidenavWidth: number;		
+
+  constructor() {
+  	this.sidenavWidth = 0;
+  }
+
+  closeNav(): void {
+  	document.getElementById("mySidenav").style.width = "0";
+  }
+
 
 }
