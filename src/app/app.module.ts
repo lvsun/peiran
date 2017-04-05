@@ -9,6 +9,9 @@ import { AppComponent } from './app.component';
 import { BlogModule } from './blog/blog.module';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './not-found/not-found.component';
+import { PeiranCommonModule } from './common/common.module';
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { PageNotFoundComponent } from './not-found/not-found.component';
     HttpModule,
     BlogModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    PeiranCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

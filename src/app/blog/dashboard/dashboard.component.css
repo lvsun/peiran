@@ -2,10 +2,6 @@ md-card-content p {
     color: rgba(0, 0, 0, .54)
 }
 
-.spacer {
-	flex: 1 1 auto;
-}
-
 md-card.mat-card {
 	bottom: 1px;
 	margin: 20px 0px;

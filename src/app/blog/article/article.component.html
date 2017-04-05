@@ -1,0 +1,8 @@
+<div class="box" *ngIf="isArticleAvaliable">
+	<h2>{{articles[0].title}}</h2>
+	<h3>{{articles[0].subtitle}}</h3>
+	<p *ngFor="let para of articles[0].paragraghs" 
+		[class.blockquo]="para.length > 300 && para.length < 400">
+		{{para}}
+	</p>
+</div>
