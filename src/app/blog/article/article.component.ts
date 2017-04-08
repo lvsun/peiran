@@ -12,20 +12,18 @@ import { ArticleService } from '../articles.service';
 export class ArticleComponent implements OnInit {
 
 	public isArticleAvaliable: boolean;
-	private articles: Article[];
-	private test: String[];
+	private article: Article;
 
   constructor(private articleServie: ArticleService) { }
 
   ngOnInit() {
-  	this.getArticles(1);
+  	this.getArticle(1);
   }
 
-	getArticles(id: number):void {
-    this.articleServie.getArticles(id).then(
+	getArticle(id: number):void {
+    this.articleServie.getArticle(id).then(
       data => {
-        this.articles = data;
-        this.test = this.articles[0].paragraghs;
+        this.article = data;
         this.isArticleAvaliable = true;
       }
     );

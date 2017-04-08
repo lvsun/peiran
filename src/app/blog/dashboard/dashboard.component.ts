@@ -11,20 +11,19 @@ import { ArticleService } from '../articles.service';
 })
 export class DashboardComponent implements OnInit {
 
-	articles: Article[];
+	article: Article;
   isArticleAvaliable: boolean;
 
   constructor(
     private as: ArticleService ) { 
-  	this.articles = new Array();
     // this.isArticleAvaliable = false; // for the observalbe version
   }
 
   ngOnInit() {
-    this.getArticles(1);
+    this.getArticle(1);
   }
 
-  getArticles(id: number):void {
+  getArticle(id: number):void {
     // the observable version
 
     // this.as.getArticles()
@@ -35,9 +34,9 @@ export class DashboardComponent implements OnInit {
     //   );
 
     // the promise version:
-    this.as.getArticles(id).then(
+    this.as.getArticle(id).then(
       data => {
-        this.articles = data;
+        this.article = data;
         this.isArticleAvaliable = true;
       }
     );
