@@ -15,7 +15,6 @@ def main(argv):
         newline = string.replace(newline, '\"', '\\\"')
         newline = '\"' + newline + '\"' + ',' + '\n'
         outputfile.write(newline)
-        print(newline)
     else:
         outputfile.write('')
     
