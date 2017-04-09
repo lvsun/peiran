@@ -1,5 +1,5 @@
 <div class="box" *ngIf="isArticleAvaliable">
 	<h2>{{article.title}}</h2>
 	<h3>{{article.subtitle}}</h3>
-	<div [innerHTML]="article.paragraghs"></div>
+	<div [innerHTML]="article.paragraghs.join('\n')"></div>
 </div>

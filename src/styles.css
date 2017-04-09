@@ -11,6 +11,36 @@ p {
     line-height: 1.6;
 }
 
+h2 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+
+    width: 100%;
+    line-height: 150%;
+    color: #666666;
+
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
+    border-bottom: 2px LightGrey solid;
+    font-size: 1em;
+    padding: 0px 0px 10px 5px;
+    color: grey;
+    margin-bottom: 30px;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 2% 8% 5% 8%;
+    border: 1px solid LightGrey;
+}
 
 .blockquo {
     border-left: 4px lightgrey solid;
