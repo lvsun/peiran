@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { Article } from 'app/common/model/Article';
 
 import { ArticleService } from '../articles.service';
+declare var hljs: any;
 
 @Component({
   selector: 'app-article',
@@ -9,7 +10,7 @@ import { ArticleService } from '../articles.service';
   styleUrls: ['./article.component.css']
 })
 
-export class ArticleComponent implements OnInit {
+export class ArticleComponent implements OnInit, AfterViewChecked {
 
 	public isArticleAvaliable: boolean;
 	private article: Article;
@@ -18,6 +19,10 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit() {
   	this.getArticle(1);
+  }
+
+  ngAfterViewChecked() {
+    hljs.initHighlightingOnLoad();
   }
 
 	getArticle(id: number):void {

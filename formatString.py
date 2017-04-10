@@ -12,6 +12,7 @@ def main(argv):
             outputfile.write('')
             continue
         newline = string.replace(line, '\n', '')
+        newline = string.replace(newline, '\t', '  ')
         newline = string.replace(newline, '\"', '\\\"')
         newline = '\"' + newline + '\"' + ',' + '\n'
         outputfile.write(newline)
