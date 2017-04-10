@@ -23,9 +23,7 @@
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "styles.css"
       ],
-      "scripts": [
-        "../node_modules/highlight/prism.js"
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
