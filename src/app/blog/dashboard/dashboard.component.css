@@ -1,3 +1,7 @@
+md-card {
+	font-family: STFangSong;
+}
+
 md-card-content p {
     color: rgba(0, 0, 0, .54)
 }
@@ -11,4 +15,17 @@ md-card.mat-card:hover {
 	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 
 		0 3px 14px 2px rgba(0, 0, 0, 0.12), 
 		0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
+md-card-header {
+	display: block;
+}
+
+md-card-header p {
+	text-align: right;
+	font-size: 14px;
+	color: rgba(0, 0, 0, .54);
+	margin-top: -10px;
+	font-family: STFangSong;
+
 }

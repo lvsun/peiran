@@ -1,43 +1,16 @@
-<md-card style="font-family: STFangSong;">
-<md-card-header>
-    <div md-card-avatar class="example-header-image"></div>
-    <md-card-title><a href="#">我想跟这个世界谈谈</a></md-card-title>
-    <md-card-subtitle>在 zoo 的十字路口，我又一次面临的选择</md-card-subtitle>
-</md-card-header>
-</md-card>
 
-<md-card style="font-family: STFangSong;">
-<md-card-header>
-    <div md-card-avatar class="example-header-image"></div>
-    <md-card-title>我想跟这个世界谈谈</md-card-title>
-    <md-card-subtitle>在 zoo 的十字路口，我又一次面临的选择</md-card-subtitle>
-</md-card-header>
-</md-card>
-
-<md-card style="font-family: STFangSong;">
-<md-card-header>
-    <div md-card-avatar class="example-header-image"></div>
-    <md-card-title>我想跟这个世界谈谈</md-card-title>
-    <md-card-subtitle>在 zoo 的十字路口，我又一次面临的选择</md-card-subtitle>
-</md-card-header>
-</md-card>
-
-<md-card style="font-family: STFangSong;">
-<md-card-header>
-    <div md-card-avatar class="example-header-image"></div>
-    <md-card-title>我想跟这个世界谈谈</md-card-title>
-    <md-card-subtitle>在 zoo 的十字路口，我又一次面临的选择</md-card-subtitle>
-</md-card-header>
-</md-card>
-
-<md-card style="font-family: STFangSong;" *ngIf="isArticleAvaliable">
-<md-card-header>
-    <div md-card-avatar class="example-header-image"></div>
-    <md-card-title>
-        <a routerLink="/blog/1">
-            {{article.title}}
-        </a>
-    </md-card-title>
-    <md-card-subtitle>{{article.subtitle}}</md-card-subtitle>
-</md-card-header>
-</md-card>
+<div *ngFor="let article of articles">
+    <md-card *ngIf="isArticleAvaliable">
+    <md-card-header>
+        <md-card-title>
+            <a [routerLink]="['/blog/', article.id]">
+                {{article.title}}
+            </a>
+        </md-card-title>
+        <p>{{article.date}}</p>
+        <md-card-subtitle>
+            {{article.subtitle}} 
+        </md-card-subtitle>
+    </md-card-header>
+    </md-card>
+</div>
