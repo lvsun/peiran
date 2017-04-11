@@ -1,7 +1,14 @@
-# Peiran.Io
+# Peiran.io
+-- version 0.2.0 beta
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
+## Changelog 
+### version 0.2.0 beta
+\+ Tweet Module 叽叽喳喳功能上线.
+\+ Uses Font from Google & Adobe: Source han serif 采用新的思源宋体做标题，思源黑体做正文字体.
 
+### version 0.1.0 beta
+\+ Blog Module availiable 只有博客页面.
+\+ Sidenav 侧边栏.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

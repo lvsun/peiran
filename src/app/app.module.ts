@@ -7,6 +7,7 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 
 import { BlogModule } from './blog/blog.module';
+import { TweetModule } from './tweet/tweet.module';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './not-found/not-found.component';
 import { PeiranCommonModule } from './common/common.module';
@@ -23,6 +24,7 @@ import { PeiranCommonModule } from './common/common.module';
     FormsModule,
     HttpModule,
     BlogModule,
+    TweetModule,
     AppRoutingModule,
     MaterialModule,
     PeiranCommonModule

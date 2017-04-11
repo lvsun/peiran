@@ -1,9 +1,8 @@
-import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Article } from 'app/common/model/Article';
 
 import { ArticleService } from '../articles.service';
-declare var hljs: any;
 
 @Component({
   selector: 'app-article',
@@ -17,7 +16,7 @@ export class ArticleComponent implements OnInit {
 	private article: Article;
 
   constructor(
-    private articleServie: ArticleService,
+    private articleService: ArticleService,
     private route: ActivatedRoute,
   ) { }
 
@@ -27,8 +26,8 @@ export class ArticleComponent implements OnInit {
     })
   }
 
-	getArticle(id: number):void {
-    this.articleServie.getArticle(id).then(
+	private getArticle(id: number):void {
+    this.articleService.getArticle(id).then(
       data => {
         this.article = data;
         this.isArticleAvaliable = true;

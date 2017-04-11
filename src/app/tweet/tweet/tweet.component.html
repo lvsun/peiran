@@ -1,0 +1,8 @@
+<div class="tweet">
+  <div *ngFor="let tweet of tweets; let i = index">
+    <p [style.border-left-color]="'rgba(72, 143, 255, 0.61)'">
+      <i>{{tweet.date}}</i>
+      {{tweet.content}}
+    </p>
+</div>
+</div>

@@ -65,3 +65,38 @@ img.displayed {
     text-align: center;
     display: block;
 }
+
+div.tweet p {
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-left: 10px solid;
+    padding: 2px 0.5em 2px 0.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fbfbfb;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+}
+
+/* following code is replaced by the [style] property in the tweet.component.html */
+/*.tweet div:nth-child(1) p {
+    border-left-color: rgb(73, 143, 255)
+}
+
+.tweet div:nth-child(2) p {
+    border-left-color: rgb(31, 220, 214)
+}*/
+
+div.tweet p:hover {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 
+		0 3px 14px 2px rgba(0, 0, 0, 0.12), 
+		0 5px 5px -3px rgba(0, 0, 0, 0.3);
+}
+
+div.tweet i {
+    color: brown;
+    font-size: 14px;
+    font-style: normal;
+    border: 1px solid #aaa;
+    margin-right: 0.5em;
+    padding: 0px 2px;
+}
