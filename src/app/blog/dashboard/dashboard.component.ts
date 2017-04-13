@@ -11,6 +11,7 @@ import { ArticleService } from '../articles.service';
 })
 export class DashboardComponent implements OnInit {
 
+  articleNumber: number;
   articles: Article[];
 	article: Article;
   isArticleAvaliable: boolean;
@@ -21,6 +22,7 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.articleNumber = 3;
     this.getArticles();
   }
 
@@ -36,7 +38,7 @@ export class DashboardComponent implements OnInit {
 
     // the promise version:
     this.articles = new Array();
-    for(let i = 1; i < 3; i++) {
+    for(let i = 1; i < (this.articleNumber+1); i++) {
       this.as.getArticle(i).then(
         data => {
           this.article = data;

@@ -38,8 +38,21 @@ h3 {
 
 .box {
     margin-top: 20px;
+    margin-bottom: 30px;
     padding: 2% 8% 5% 8%;
     border: 1px solid LightGrey;
+}
+
+.box p {
+    color: rgba(0, 0, 0, .8);
+}
+
+.box div h2 {
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "source-han-sans-simplified-c", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: bolder;
+    margin-top: 40px;
+    font-size: 20px;
+
 }
 
 blockquote {
@@ -97,6 +110,6 @@ div.tweet i {
     font-size: 14px;
     font-style: normal;
     border: 1px solid #aaa;
-    margin-right: 0.5em;
+    margin-right: 2px;
     padding: 0px 2px;
 }
